@@ -9,9 +9,12 @@ function onGeoOk(position) {
         .then((data) => {
             const city = document.querySelector("#weather span:first-child");
             const weather = document.querySelector("#weather span:last-child");
+            console.log(data);
 
             city.innerText = data.name;
-            weather.innerText = `${data.weather[0].main} / ${data.main.temp}℃`;
+            weather.innerText = `${data.weather[0].main} / ${Math.round(
+                data.main.temp
+            )}℃`;
         });
 }
 function onGeoError(event) {
