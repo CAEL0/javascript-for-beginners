@@ -26,9 +26,12 @@
     text-align: right;
     font-size: 20px;
 }
+#calendar {
+    font-size: 40px;
+    margin-top: 60px;
+}
 #clock {
     font-size: 70px;
-    margin-top: 70px;
 }
 #greeting {
     font-size: 40px;
@@ -62,7 +65,7 @@
     background-color: transparent;
 }
 #todo-list li button:hover {
-    font-size: 25px;
+    font-style: oblique;
 }
 #quote {
     position: fixed;
